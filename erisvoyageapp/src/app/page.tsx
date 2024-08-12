@@ -1,11 +1,12 @@
 import React from 'react';
 import Footer from './Components/Ui/Footer';
+import Hero from './Components/Ui/Hero';
 const HomePage = () => {
   return (
     <div>
-      <h1>Bienvenue sur la page d accueil</h1>
-     
-      <Footer />
+   
+     <Hero />
+     <Footer />
     </div>
   );
 };
