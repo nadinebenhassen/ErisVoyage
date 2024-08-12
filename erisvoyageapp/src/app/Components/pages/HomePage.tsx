@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './Components/Ui/Footer';
+import Footer from '../Ui/Footer';
 const HomePage = () => {
   return (
     <div>
