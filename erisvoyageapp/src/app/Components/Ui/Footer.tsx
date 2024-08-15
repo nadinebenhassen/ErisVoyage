@@ -9,7 +9,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: '#f8f9fa', padding: '2rem 0', textAlign: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginBottom: '1rem' }}>
         <div>
-        <Image src="/assets/Cx011.png" alt="Eris Travel & Events" width={150} height={150} style={{ maxWidth: '150px' }} />
+        <Image src="/assets/images/Cx011.png" alt="Eris Travel & Events" width={150} height={150} style={{ maxWidth: '150px' }} />
         </div>
         <div>
           <h3>Contactez Nous</h3>

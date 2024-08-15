@@ -15,7 +15,10 @@ import { ContactPage } from './Components/pages/ContactPage';
 const HomePage = () => {
   return (
     <Router>
-    <div>
+     <div
+      style={{
+        backgroundImage: `url('assets/images/Background.jpeg')`,        
+      }}>
     < Navbar />
     <Hero
         backgroundImage="https://mdbootstrap.com/img/new/slides/041.webp"
