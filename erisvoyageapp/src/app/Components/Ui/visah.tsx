@@ -1,6 +1,6 @@
 'use client';
 import React, { CSSProperties } from 'react';
-import { useNavigate } from 'react-router-dom';
+import Link from 'next/link';
 
 const VisaComponent = () => {
 
@@ -82,11 +82,8 @@ const VisaComponent = () => {
   const handleMouseOut = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.currentTarget.style.backgroundColor = styles.visaButton.backgroundColor as string;
   };
-  const navigate = useNavigate();
-  const handleClick = () => {
-   
-    navigate('/contact');
-  };
+
+ 
 
   return (
     <div style={styles.visaSection}>
@@ -103,14 +100,12 @@ const VisaComponent = () => {
         ))}
       </div>
       <div style={styles.visaButtonContainer}>
-        <button
-          style={styles.visaButton}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          onClick={handleClick}
+        <Link
+        href={'/contact'}
+          style={styles.visaButton} 
         >
           Demande de Visa
-        </button>
+        </Link>
       </div>
     </div>
   );

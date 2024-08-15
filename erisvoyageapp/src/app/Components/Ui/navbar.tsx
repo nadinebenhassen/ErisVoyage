@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assurez-vous que react-router-dom est installé
-
+import Link from 'next/link';
 const Navbar = () => {
   const styles: { [key: string]: React.CSSProperties } = {
     navbar: {
@@ -57,7 +56,7 @@ const Navbar = () => {
       </div>
       <div style={styles.navLinks}>
         <Link
-          to="/"
+          href="/"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -65,7 +64,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="/services"
+          href="/services"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -73,7 +72,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          to="/visa"
+          href="/visa"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -81,7 +80,7 @@ const Navbar = () => {
           Visa
         </Link>
         <Link
-          to="/omra"
+          href="/omra"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -89,7 +88,8 @@ const Navbar = () => {
           Omra
         </Link>
         <Link
-          to="/contact"
+          
+          href="/contact"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -97,7 +97,7 @@ const Navbar = () => {
           Contact
         </Link>
         <Link
-          to="/blog"
+          href="/blog"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
