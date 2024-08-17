@@ -1,8 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Ui/navbar';
-import Hero from '../Components/Ui/Hero';
 import Footer from '../Components/Ui/Footer';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -10,63 +8,64 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Frocontact from '../Components/Ui/formcontatct';
 import Hero2 from '../Components/Hero2';
-import { fontGrid } from '@mui/material/styles/cssUtils';
 
 const styles = {
   main: {
-    padding: '20px',
-    textAlign: 'center',
+    padding: '50px 20px', // Plus de padding pour un effet plus espacé
+    textAlign: 'center'as const,
     backgroundColor: '#f9f9f9',
   },
   title: {
-    fontSize: '4em',
+    fontSize: '3em',
     marginBottom: '20px',
-    fontFamily: "adelia" ,
-    textAlign: 'center'as const,
+    fontFamily: "adelia",
     color: '#315F44',
-
+    letterSpacing: '2px', // Ajout de l'espacement des lettres pour un effet plus soigné
   },
   titre: {
-    fontSize: '4em',
-    marginBottom: '20px',
+    fontSize: '3em',
+    marginBottom: '40px',
     fontFamily: "Grey Qo" ,
-    textAlign: 'right'as const,
-    color: ' #C59A00'
-
-
+    textAlign: 'center'as const,
+    color: '#C59A00',
   },
   description: {
     fontSize: '1.2em',
-    margin: '0 auto',
-    padding: '15px',
-    maxWidth: '800px',
+    margin: '0 auto 30px auto',
+    padding: '20px',
+    maxWidth: '900px',
     border: '2px solid #4CAF50',
     borderRadius: '10px',
     backgroundColor: '#fff',
-    lineHeight: '1.5',
+    lineHeight: '1.8', // Plus d'espacement entre les lignes pour améliorer la lisibilité
   },
   contactInfo: {
-    marginTop: '20px',
-    padding: '20px',
+    marginTop: '40px',
+    padding: '30px',
     border: '2px solid #4CAF50',
     borderRadius: '10px',
     backgroundColor: '#fff',
     display: 'inline-block',
+    width: '80%', // Élément plus large pour occuper l'espace
   },
   contactItem: {
-    fontSize: '1.1em',
-    margin: '10px 0',
+    fontSize: '1.2em',
+    margin: '15px 0',
+    display: 'flex',
+    alignItems: 'center', // Aligner l'icône avec le texte
+    gap: '10px', // Espace entre l'icône et le texte
   },
   link: {
     color: '#4CAF50',
     textDecoration: 'none',
   },
   mapContainer: {
-    marginTop: '20px',
-    border: '2px solid #4CAF50',
+    marginTop: '50px',
+    border: '8px solid #4CAF50',
     borderRadius: '10px',
     overflow: 'hidden',
     display: 'inline-block',
+    width: '50%', // Pleine largeur pour le conteneur de la carte
   },
   iframe: {
     width: '100%',
@@ -74,13 +73,13 @@ const styles = {
     border: '0',
   },
   socialIcons: {
-    marginTop: '20px',
+    marginTop: '30px',
     display: 'flex',
     justifyContent: 'center',
-    gap: '10px',
+    gap: '20px', // Plus d'espace entre les icônes
   },
   icon: {
-    fontSize: '2rem',
+    fontSize: '2.5rem',
     color: '#4CAF50',
     cursor: 'pointer',
   },
@@ -91,24 +90,32 @@ const Contact = () => {
     <div>
       <Navbar />
       <Hero2
-        backgroundImage="/assets/CaptureDcran202402211356311.png" // Corrected the image path
+        backgroundImage="./assets/images/CaptureDcran202402211356311.png" // Background Image correction
         title=""
       />
-      <main>
-        <h1 style={styles.title}>pour plus d'information n'hésitez pas</h1>
+      <main style={styles.main}>
+        <h1 style={styles.title}>Pour plus d'information, n'hésitez pas</h1>
         <p style={styles.titre}>à nous contacter</p>
         <p style={styles.description}>
           <strong>Eris Travel & Events</strong> incarne l'essence du voyage et de la découverte. Avec une passion inégalée pour créer des expériences uniques et mémorables, nous sommes bien plus qu'une simple agence de voyage. Nous sommes les architectes de vos rêves, les maîtres d'œuvre de vos aventures. Parcourez le monde avec nous et laissez-nous vous guider à travers des destinations enchanteresses, des cultures vibrantes et des événements inoubliables. Bienvenue chez Eris, où chaque voyage est une ode à l'exploration et à l'émerveillement.
         </p>
         <div style={styles.contactInfo}>
-          <p style={styles.contactItem}><strong>
-          <PhoneIcon style={styles.icon} />Phone:</strong> +216 53 129 147</p>
-          <p style={styles.contactItem}><strong>
-          <MarkunreadIcon style={styles.icon} />Email:</strong> <a href="mailto:eris-travel@hotmail.com" style={styles.link}>eris-travel@hotmail.com</a></p>
-          <p style={styles.contactItem}><strong>
-          <InstagramIcon style={styles.icon} />Instagram:</strong> <a href="https://www.instagram.com/eris_travel_events" target="_blank" rel="noopener noreferrer" style={styles.link}>@eris_travel_events</a></p>
-          <p style={styles.contactItem}><strong>
-          <LocationOnIcon style={styles.icon} /> Address:</strong> Éris Travel & Events, Immeuble Mallouli RDC, Av. des orangers, Sousse, Sousse, Tunisia</p>
+          <div style={styles.contactItem}>
+            <PhoneIcon style={styles.icon} />
+            <span><strong>Phone:</strong> +216 53 129 147</span>
+          </div>
+          <div style={styles.contactItem}>
+            <MarkunreadIcon style={styles.icon} />
+            <span><strong>Email:</strong> <a href="mailto:eris-travel@hotmail.com" style={styles.link}>eris-travel@hotmail.com</a></span>
+          </div>
+          <div style={styles.contactItem}>
+            <InstagramIcon style={styles.icon} />
+            <span><strong>Instagram:</strong> <a href="https://www.instagram.com/eris_travel_events" target="_blank" rel="noopener noreferrer" style={styles.link}>@eris_travel_events</a></span>
+          </div>
+          <div style={styles.contactItem}>
+            <LocationOnIcon style={styles.icon} />
+            <span><strong>Address:</strong> Éris Travel & Events, Immeuble Mallouli RDC, Av. des orangers, Sousse, Sousse, Tunisia</span>
+          </div>
         </div>
         <div style={styles.mapContainer}>
           <iframe
@@ -119,10 +126,8 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        
       </main>
       <Frocontact />
-
       <Footer />
     </div>
   );

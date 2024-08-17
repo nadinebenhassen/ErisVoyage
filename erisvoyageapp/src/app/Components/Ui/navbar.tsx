@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <nav style={styles.navbar}>
       <div style={styles.logo}>
-        <img src="\assets\Cx011.png" alt="Logo" style={styles.logo} /> {/* Ajoutez votre image de logo ici */}
+        <img src=".\assets\images\Cx011.png" alt="Logo" style={styles.logo} /> {/* Ajoutez votre image de logo ici */}
       </div>
       <div style={styles.navLinks}>
         <Link
@@ -64,7 +64,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/services"
+          href="/service"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
@@ -72,7 +72,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          href="/visa"
+          href="/contact"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}

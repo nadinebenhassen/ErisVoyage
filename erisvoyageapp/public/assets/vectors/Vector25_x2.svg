@@ -1,0 +1,18 @@
+<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter68_908)">
+<path d="M48.567,0L13.433,0C9.871,0 6.454,1.415 3.935,3.935C1.415,6.454 0,9.871 0,13.433L0,48.567C0,52.129 1.415,55.546 3.935,58.065C6.454,60.585 9.871,62 13.433,62L48.567,62C52.129,62 55.546,60.585 58.065,58.065C60.585,55.546 62,52.129 62,48.567L62,13.433C62,9.871 60.585,6.454 58.065,3.935C55.546,1.415 52.129,0 48.567,0ZM18.786,45.694L14.88,45.694C14.222,45.694 13.591,45.433 13.126,44.968C12.661,44.503 12.4,43.872 12.4,43.214L12.4,28.303L18.807,33.17L18.786,45.694ZM49.6,43.214C49.6,43.872 49.339,44.503 48.874,44.968C48.409,45.433 47.778,45.694 47.12,45.694L43.214,45.694L43.214,33.17L49.6,28.303L49.6,43.214ZM49.6,22.258L43.183,27.135L31,36.373L18.817,27.073L12.4,22.258L12.4,18.414C12.392,18 12.504,17.592 12.724,17.241C12.944,16.89 13.261,16.611 13.638,16.437C14.014,16.264 14.433,16.204 14.842,16.265C15.252,16.326 15.635,16.506 15.944,16.781L31,28.334L46.056,16.781C46.365,16.506 46.748,16.326 47.158,16.265C47.567,16.204 47.986,16.264 48.362,16.437C48.739,16.611 49.056,16.89 49.276,17.241C49.496,17.592 49.608,18 49.6,18.414L49.6,22.258Z" fill="#D3A603"/>
+</g>
+<defs>
+<filter id="filter68_908" x="-2.9" y="-2.9" width="36.8" height="36.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="0" operator="dilate" in="SourceAlpha" result="0dropshadow"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="1.45"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.19 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="0dropshadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="0dropshadow" result="shape"/>
+</filter>
+</defs>
+</svg>

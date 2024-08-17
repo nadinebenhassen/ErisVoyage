@@ -18,25 +18,25 @@ export default function PourquoiNosChoix() {
   const choix = [
     { 
       name: 'Nos Voyages', 
-      image: 'path_to_voyages_image', 
+      image: './assets/images/PexelsOleksandrP20704851.jpeg', 
       link: '/voyages', 
       topChoice: true 
     },
     { 
       name: 'Nos Hôtels', 
-      image: 'path_to_hotels_image', 
+      image: './assets/images/ChelseaGates0653Wy0NrcUnsplash1.jpeg', 
       link: '/hotels', 
       discount: '15%' 
     },
     { 
       name: 'Nos Circuits', 
-      image: 'path_to_circuits_image', 
+      image: './assets/images/ConceptionInterieureTraditionnelleMaison.jpeg', 
       link: '/circuits', 
       topChoice: true 
     },
     { 
       name: 'Nos Croisières', 
-      image: 'path_to_croisieres_image', 
+      image: './assets/images/AlonsoReyesLwfdBz4D6Neunsplash14.jpeg', 
       link: '/croisieres', 
       discount: '15%' 
     },

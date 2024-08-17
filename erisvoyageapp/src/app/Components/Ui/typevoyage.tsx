@@ -9,10 +9,10 @@ import ButtonBase from '@mui/material/ButtonBase';
 
 export default function TypeVoyag() {
   const voyages = [
-    { name: 'Voyage de Noce', image: 'path_to_honeymoon_image', link: '/honeymoon' },
-    { name: 'Voyage Historique', image: 'path_to_historical_image', link: '/historical' },
-    { name: 'Voyage de Nature', image: 'path_to_nature_image', link: '/nature' },
-    { name: 'Voyage pour Shopping', image: 'path_to_shopping_image', link: '/shopping' },
+    { name: 'Voyage de Noce', image: './assets/images/PexelsAsadPhotoMaldives25490711.jpeg', link: '/honeymoon' },
+    { name: 'Voyage Historique', image: './assets/images/section.jpeg', link: '/historical' },
+    { name: 'Voyage de Nature', image: './assets/images/nature.jpg', link: '/nature' },
+    { name: 'Voyage pour Shopping', image: './assets/images/PexelsPatWhelen62209731.jpeg', link: '/shopping' },
   ];
 
   const handleClick = (link: string) => {
@@ -34,8 +34,8 @@ export default function TypeVoyag() {
           <Grid item xs={12} sm={6} md={3} key={index}>
             <ButtonBase onClick={() => handleClick(voyage.link)} style={{ width: '100%' }}>
               <Card style={{ borderRadius: '20px', backgroundColor: '#f5f5f5', padding: '20px', width: '100%', minHeight: '300px' }}>
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                  <img src={voyage.image} alt={voyage.name} style={{ borderRadius: '15px', maxHeight: '200px' }} />
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', height: '200px', overflow: 'hidden' }}>
+                  <img src={voyage.image} alt={voyage.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />
                 </div>
                 <CardContent>
                   <Typography variant="h6" component="div" style={{ fontFamily: 'Cursive', color: '#616161' }}>

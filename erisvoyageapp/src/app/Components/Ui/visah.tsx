@@ -4,23 +4,22 @@ import Link from 'next/link';
 
 const VisaComponent = () => {
 
-
   const visaTypes = [
     {
       title: "VISA DE TOURISME",
-      image: "/path/to/tourisme-image.jpg",
+      image: "./assets/images/RoadWalletDestinationsMapTourism1.jpeg",
     },
     {
       title: "VISA D'AFFAIRES",
-      image: "/path/to/affaires-image.jpg",
+      image: "./assets/images/FlatLayVisaApplicationAssortment1.jpeg",
     },
     {
       title: "VISA D'ÉTUDIANT",
-      image: "/path/to/etudiant-image.jpg",
+      image: "./assets/images/Photo1.jpeg",
     },
     {
       title: "VISA DE TRAVAIL",
-      image: "/path/to/travail-image.jpg",
+      image: "./assets/images/Shutterstock517314946NewsItemSliderT15662127861.jpeg",
     },
   ];
 
@@ -30,12 +29,11 @@ const VisaComponent = () => {
       padding: '20px',
     },
     visaTitle: {
-      fontSize: '24px',
-      color: '#36454F',
+     fontSize: '36px',
+      color: '#2e7d32',
     },
     subtitle: {
-      color: '#F4A950',
-      fontStyle: 'italic',
+      color: '#fbc02d', fontFamily: 'Cursive',
     },
     visaCards: {
       display: 'flex',
@@ -45,19 +43,21 @@ const VisaComponent = () => {
     },
     visaCard: {
       backgroundColor: '#f5f5f5',
-      padding: '15px',
+      padding: '20px', // Increased padding
       borderRadius: '12px',
-      width: '240px',
+      width: '450px', // Increased width
       marginBottom: '20px',
     },
     visaImage: {
       width: '100%',
+      height:'80%',
       borderRadius: '8px',
     },
     visaType: {
       marginTop: '10px',
       fontSize: '18px',
       color: '#333',
+      fontFamily: 'Cursive'
     },
     visaButtonContainer: {
       display: 'flex',
@@ -83,8 +83,6 @@ const VisaComponent = () => {
     e.currentTarget.style.backgroundColor = styles.visaButton.backgroundColor as string;
   };
 
- 
-
   return (
     <div style={styles.visaSection}>
       <h2 style={styles.visaTitle}>
@@ -101,8 +99,8 @@ const VisaComponent = () => {
       </div>
       <div style={styles.visaButtonContainer}>
         <Link
-        href={'/contact'}
-          style={styles.visaButton} 
+          href={'/contact'}
+          style={styles.visaButton}
         >
           Demande de Visa
         </Link>

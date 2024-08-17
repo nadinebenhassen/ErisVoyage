@@ -73,6 +73,8 @@ export default function Hero({ backgroundImage, title }: HeroProps) {
           </IconButton>
         </div>
       </div>
+      {/* <img className="group-502" src="assets\vectors\Group5025_x2.svg" /> */}
+      
     </header>
   );
 }

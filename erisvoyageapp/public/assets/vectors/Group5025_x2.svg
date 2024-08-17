@@ -1,0 +1,22 @@
+<svg width="3892" height="338" viewBox="0 0 3892 338" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.28">
+<path d="M1839.966,225.13C1046.796,357.1 816.51,174.315 594.002,225.13C256.74,302.548 0,213.772 0,213.772L0,0L3890,0L3890,213.772C3890,213.772 3648.42,252.78 3520.84,257.562C3393.24,262.494 3276.54,239.178 3225.98,224.532C3135.34,198.676 2899.22,137.548 2703.16,131.57C2507.1,125.592 1915.432,212.724 1839.966,225.13Z" transform="rotate(0 1944.996 137)" fill="#F5F5F5"/>
+</g>
+<path d="M2981.083,137.551C2203.363,63.95 1946.719,221.392 1444.699,162.511C943.069,102.863 943.069,107.471 720.639,126.927C499.765,146.383 516.487,158.031 351.609,167.759C113.238,182.095 2.023,100.559 2.023,100.559L3890.643,100.559C3890.643,100.559 3852.143,152.911 3565.543,162.127C3278.963,171.343 3228.023,160.719 2981.083,137.551Z" fill="#F5F5F5"/>
+<g filter="url(#filter85_836)">
+<path d="M2978.6,236.07C2201,40.948 1944.388,458.34 1442.448,302.242C940.896,144.108 940.896,156.325 718.502,207.905C497.664,259.485 514.382,290.365 349.532,316.155C111.197,354.162 0,138 0,138L3888,138C3888,138 3849.5,276.791 3562.96,301.224C3276.42,325.657 3225.48,297.491 2978.6,236.07Z" fill="#EDEDED" fill-opacity="0.43"/>
+</g>
+<defs>
+<filter id="filter85_836" x="-20.5" y="117.5" width="1985" height="141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="0" operator="dilate" in="SourceAlpha" result="0dropshadow"/>
+<feOffset dx="8" dy="-1"/>
+<feGaussianBlur stdDeviation="10.25"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="0dropshadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="0dropshadow" result="shape"/>
+</filter>
+</defs>
+</svg>

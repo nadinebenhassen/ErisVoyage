@@ -33,9 +33,9 @@ const Frocontact = () => {
     },
     formTitle: {
       textAlign: 'center',
-      fontSize: '24px',
+      fontSize: '3em',
       marginBottom: '20px',
-      color: '#333',
+      color: '#C59A00',
     },
     formGroup: {
       marginBottom: '15px',
@@ -85,9 +85,9 @@ const Frocontact = () => {
   };
 
   return (
-    <div style={styles.formContainer}>
+    <div >
       <h2 style={styles.formTitle}>Formulaire de Contact</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={styles.formContainer}>
         <div style={styles.formGroup}>
           <label style={styles.label} htmlFor="nom">Nom</label>
           <input

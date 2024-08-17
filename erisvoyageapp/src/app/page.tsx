@@ -7,6 +7,7 @@ import TypeVoyage from './Components/Ui/typevoyage';
 import PourquoiNosChoix from './Components/Ui/pourquoinous';
 import VisaComponent from './Components/Ui/visah';
 import Navbar from './Components/Ui/navbar';
+import OmraComponent from './Components/Ui/omra';
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <TypeVoyage />
       <PourquoiNosChoix />
       <VisaComponent />
+      <OmraComponent/>
       <Footer />
     </div>
   );

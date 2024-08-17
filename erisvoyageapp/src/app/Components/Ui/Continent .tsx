@@ -1,33 +1,69 @@
 'use client';
-
+import Image from 'next/image';
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
+import { Margin } from '@mui/icons-material';
 
 export default function ContinentGrid() {
   const continents = [
-    { name: 'Australia', image: 'path_to_australia_image', link: '/australia' },
-    { name: 'Africa', image: 'path_to_africa_image', link: '/africa' },
-    { name: 'Asia', image: 'path_to_asia_image', link: '/asia' },
-    { name: 'Europe', image: 'path_to_europe_image', link: '/europe' },
-    { name: 'South America', image: 'path_to_south_america_image', link: '/south-america' },
-    { name: 'North America', image: 'path_to_north_america_image', link: '/north-america' },
+    { name: 'Australia', image: 'assets/images/Australia.png', link: '/australia' },
+    { name: 'Africa', image: 'assets/images/Africa.png', link: '/africa' },
+    { name: 'Asie', image: 'assets/images/Asia.png', link: '/Asie' },
+    { name: 'Europe', image: 'assets/images/Europ.png', link: '/europe' },
+    { name: 'South America', image: 'assets/images/SouthAmerica.png', link: '/south-america' },
+    { name: 'North America', image: 'assets/images/Northamerica.png', link: '/north-america' },
   ];
-
+  const container = document.getElementById('continents');
+  continents.forEach((continent) => {
+    const div = document.createElement('div');
+    div.style.backgroundImage = `url(${continent.image})`;
+    div.style.backgroundPosition = '50% 50%';
+    div.style.backgroundSize = 'cover';
+    div.style.backgroundRepeat = 'no-repeat';
+    div.style.position = 'absolute';
+    div.style.left = '50%';
+    div.style.bottom = '0px';
+    div.style.transform = 'translateX(-50%)';
+    div.style.width = '195px';
+    div.style.height = '169px';
+    continents.forEach((continent) => {
+      const div = document.createElement('div');
+      div.style.backgroundImage = `url(${continent.image})`;
+      div.style.backgroundPosition = '50% 50%';
+      div.style.backgroundSize = 'cover';
+      div.style.backgroundRepeat = 'no-repeat';
+      div.style.position = 'absolute';
+      div.style.left = '50%';
+      div.style.bottom = '0px';
+      div.style.transform = 'translateX(-50%)';
+      div.style.width = '195px';
+      div.style.height = '169px';
+  
+      div.innerHTML = `<a href="${continent.link}">${continent.name}</a>`;
+      container?.appendChild(div);
+    });
+  });
   const handleClick = (link: string) => {
     // Handle navigation or any other action here
     window.location.href = link;
   };
+  
 
   return (
+
+    
     <div style={{ padding: '40px 20px', textAlign: 'center' }}>
-      <Typography variant="h4" component="h2" style={{ color: '#2e7d32', marginBottom: '10px' }}>
-        Sélectionnez Votre Destination de Manière
-      </Typography>
-      <Typography variant="h4" component="h2" style={{ color: '#fbc02d', fontFamily: 'Cursive', marginBottom: '40px' }}>
+      <span style={{ fontSize: '30px' }} className="m-[0_0_27px_19px] break-words text-[#315F44] text-[48px] leading-[1.333] font-['Poppins'] font-black uppercase">
+  Sélectionner Votre Destination de Manière
+</span>
+
+
+                
+      <Typography variant="h4" component="h2" style={{ color: '#D3A603',fontFamily:'bradely hand', marginBottom: '50px' }}>
         Fluide et Rapide
       </Typography>
       
