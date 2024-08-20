@@ -72,7 +72,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          href="/contact"
+          href="/Visa"
           style={styles.link}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}

@@ -19,7 +19,7 @@ export default function TypeVoyag() {
     // Handle navigation or any other action here
     window.location.href = link;
   };
-
+//onClick={() => handleClick(voyage.link)}*en haut du bouttonbase/
   return (
     <div style={{ padding: '40px 20px', textAlign: 'center' }}>
       <Typography variant="h4" component="h2" style={{ color: '#2e7d32', marginBottom: '10px' }}>
@@ -32,7 +32,7 @@ export default function TypeVoyag() {
       <Grid container spacing={4} justifyContent="center">
         {voyages.map((voyage, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
-            <ButtonBase onClick={() => handleClick(voyage.link)} style={{ width: '100%' }}>
+             <ButtonBase  style={{ width: '100%' }}> 
               <Card style={{ borderRadius: '20px', backgroundColor: '#f5f5f5', padding: '20px', width: '100%', minHeight: '300px' }}>
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', height: '200px', overflow: 'hidden' }}>
                   <img src={voyage.image} alt={voyage.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} />

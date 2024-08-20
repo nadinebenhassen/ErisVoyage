@@ -25,19 +25,19 @@ export default function PourquoiNosChoix() {
     { 
       name: 'Nos Hôtels', 
       image: './assets/images/ChelseaGates0653Wy0NrcUnsplash1.jpeg', 
-      link: '/hotels', 
+      link: '/Hotel', 
       discount: '15%' 
     },
     { 
       name: 'Nos Circuits', 
       image: './assets/images/ConceptionInterieureTraditionnelleMaison.jpeg', 
-      link: '/circuits', 
+      link: '/circuit', 
       topChoice: true 
     },
     { 
       name: 'Nos Croisières', 
       image: './assets/images/AlonsoReyesLwfdBz4D6Neunsplash14.jpeg', 
-      link: '/croisieres', 
+      link: '/croisiere', 
       discount: '15%' 
     },
   ];
