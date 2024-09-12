@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Navbar from '../Components/Ui/navbar';
 import Footer from '../Components/Ui/Footer';
@@ -8,6 +9,9 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Frocontact from '../Components/Ui/formcontatct';
 import Hero2 from '../Components/Hero2';
+
+
+
 
 const styles = {
   main: {
@@ -84,7 +88,9 @@ const styles = {
     cursor: 'pointer',
   },
 };
-
+const handleNotification = (message: string) => {
+  alert(message); // You can replace this with your preferred notification system
+};
 const Contact = () => {
   return (
     <div>
@@ -127,7 +133,8 @@ const Contact = () => {
           ></iframe>
         </div>
       </main>
-      <Frocontact />
+      <Frocontact onNotify={handleNotification} />;       
+   
       <Footer />
     </div>
   );

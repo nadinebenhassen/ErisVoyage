@@ -1,14 +1,17 @@
-'use client';
 import React, { useState } from 'react';
 
-const Frocontact = () => {
+interface FrocontactProps {
+  onNotify: (message: string) => void;
+}
+
+const Frocontact: React.FC<FrocontactProps> = ({ onNotify }) => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
     tel: '',
     email: '',
     objet: '',
-    message: '',
+    description: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -16,10 +19,37 @@ const Frocontact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', form);
+
+    try {
+      const response = await fetch('http://localhost:3002/demande', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        onNotify('Form successfully submitted!');
+        // Reset form after successful submission
+        setForm({
+          nom: '',
+          prenom: '',
+          tel: '',
+          email: '',
+          objet: '',
+          description: '',
+        });
+      } else {
+        onNotify('Failed to submit the form.');
+      }
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      onNotify('An error occurred while submitting the form.');
+    }
   };
 
   const styles: { [key: string]: React.CSSProperties } = {
@@ -79,13 +109,10 @@ const Frocontact = () => {
       fontSize: '16px',
       cursor: 'pointer',
     },
-    buttonHover: {
-      backgroundColor: '#45a049',
-    },
   };
 
   return (
-    <div >
+    <div>
       <h2 style={styles.formTitle}>Formulaire de Contact</h2>
       <form onSubmit={handleSubmit} style={styles.formContainer}>
         <div style={styles.formGroup}>
@@ -157,11 +184,11 @@ const Frocontact = () => {
           </select>
         </div>
         <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="message">Message</label>
+          <label style={styles.label} htmlFor="description">Message</label>
           <textarea
-            id="message"
-            name="message"
-            value={form.message}
+            id="description"
+            name="description"
+            value={form.description}
             onChange={handleChange}
             style={styles.textarea}
             required
@@ -170,7 +197,6 @@ const Frocontact = () => {
         <button
           type="submit"
           style={styles.button}
-          
         >
           Envoyer
         </button>
